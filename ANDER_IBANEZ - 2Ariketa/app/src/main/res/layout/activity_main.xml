@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bistaratu_BT"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:text="BISTARATU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/korreoa_ET"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <EditText
+        android:id="@+id/data_ET"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/korreoa_ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abizena_ET"
+        app:layout_constraintVertical_bias="1.0"
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/tlf_ET"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/korreoa_ET"
+        app:layout_constraintEnd_toStartOf="@+id/data_ET"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/izena_ET"
+        app:layout_constraintVertical_bias="1.0"
+        android:maxLength="9"/>
+
+    <EditText
+        android:id="@+id/korreoa_ET"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        android:maxLength="32"/>
+
+    <EditText
+        android:id="@+id/abizena_ET"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="156dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/korreoa_ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:maxLength="15"/>
+
+    <EditText
+        android:id="@+id/izena_ET"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="156dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/korreoa_ET"
+        app:layout_constraintEnd_toStartOf="@+id/abizena_ET"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:maxLength="15"/>
+
+    <TextView
+        android:id="@+id/izena_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IZENA"
+        app:layout_constraintBottom_toTopOf="@+id/izena_ET"
+        app:layout_constraintEnd_toStartOf="@+id/abizena_TV"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/abizena_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABIZENA"
+        app:layout_constraintBottom_toTopOf="@+id/abizena_ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tlfZbk_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TELEFONO ZENBAKIA"
+        app:layout_constraintBottom_toTopOf="@+id/tlf_ET"
+        app:layout_constraintEnd_toStartOf="@+id/data_TV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/izena_ET"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/data_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAIOTZE DATA"
+        app:layout_constraintBottom_toTopOf="@+id/data_ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abizena_ET"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/korreoa_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KORREOA"
+        app:layout_constraintBottom_toTopOf="@+id/korreoa_ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlf_ET"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
