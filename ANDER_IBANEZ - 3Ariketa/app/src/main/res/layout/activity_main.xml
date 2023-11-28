@@ -10,7 +10,7 @@
         android:id="@+id/azpe_BT"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:background="White"
+
         android:src="@mipmap/azpeitia_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/elgo_BT"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:background="White"
+
         android:src="@mipmap/elgoibar_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/azpe_BT"
@@ -36,7 +36,7 @@
         android:id="@+id/azko_BT"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:background="White"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
